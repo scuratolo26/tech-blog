@@ -4,8 +4,7 @@
     <p class="card-header"> {{post.title}} | {{vote_count}} {{format_plural "point" vote_count}} by
       {{user.username}} on {{format_date created_at}}</p>
     <p class="card-body">{{post.post_text}}</p>
-    {{!-- {{> post-info post}} --}}
-    <a href="/dashboard/edit/{{post.id}}" class="edit-post card-footer">Edit post</a>
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </li>
   {{/each}}
 </ol>
