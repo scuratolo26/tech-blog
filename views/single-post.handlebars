@@ -3,12 +3,12 @@
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea class="form-control col-4" name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+    <button class="btn btn-primary" type="submit">add comment</button>
+    <button type="button" class="upvote-btn btn btn-primary">upvote</button>
   </div>
 </form>
 {{/if}}
